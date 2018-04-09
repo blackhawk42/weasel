@@ -90,7 +90,7 @@ func (of *Offspring) Overman() bool {
 
 // Create a nice-looking report for printing
 func (of *Offspring) Report() string {
-	return fmt.Sprintf("%04d: %s  --- score: %.2f%% (%d/%d)", of.Generation,
+	return fmt.Sprintf("%04d: %s  --- score: %4.2f%% (%d/%d)", of.Generation,
 	string(of.Phrase), of.RelativeFitness()*100, of.Fitness, of.MaxFitness() )
 }
 

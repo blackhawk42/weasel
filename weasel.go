@@ -17,9 +17,9 @@ const DEFAULT_MAX_GENERATIONS int = 1000
 
 func main() {
 	// Options and non-standard exit points
-	var offspringNumber = flag.Int("offspring", DEFAULT_OFFSPRING_NUMBER, "`number` of offspring generated for each generation")
+	var offspringNumber = flag.Int("offspring-per-generation", DEFAULT_OFFSPRING_NUMBER, "number of `offspring` generated per each generation")
 	var mutationRate = flag.Float64("mutation-rate", DEFAULT_MUTATION_RATE, "mutation `rate`, expressed as a percentage [0.0, 1.0]")
-	var targetPhrase = flag.String("target", DEFAULT_TARGET_FRASE, "`target phrase` aginst which fitness will be measured")
+	var targetPhrase = flag.String("target", DEFAULT_TARGET_FRASE, "target `phrase` aginst which fitness will be measured")
 	var maxGenerations = flag.Int("max-generations", DEFAULT_MAX_GENERATIONS, "maximum number of `generations`, to avoid an endless orgy")
 	
 	flag.Usage = func () {
